@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Bem-Vindo Visual Alpha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/static/css/estilo.css" rel="stylesheet" />
+        <script src="/static/script.js"></script>
+    </head>
+    <body>
+        <div class="cabeçalho">
+         <div class="carrinho">
+         <img src="/static/img/Carrinho.png" alt="">
+        </div>
+            <img src="/static/img/Logotipo.png" alt="">
+            
+                <div class="search-bar">
+        <input type="text" placeholder="Pesquisar..." class="search-input">
+        <button class="search-button">&#128269;</button> <!-- Ícone de lupa -->
+    </div>
+             <nav id="menu-principal">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="informacoesdaloja.html">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#fale-conosco">Fale Conosco</a></li>
+        </ul>
+    </nav>
+         
+        </div>
+      <div class="menu-hamburguer" onclick="toggleMenu()">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+    </div>
+        
+    <nav id="menu">
+        <ul>
+            <li class="dropdown">
+                <a href="#home" onclick="toggleDropdown(event, 'submenu-home')">Para o Cabelo</a>
+                <ul class="submenu" id="submenu-home">
+                    <li><a href="#opcao1">Pomadas, Ceras, Géis</a></li>
+                    <li><a href="#opcao2">Shampoos e Condicionadores</a></li>
+                    <li><a href="#opcao3">Tônicos Capilares</a></li>
+                     <li><a href="#opcao4">Crescimento Capilar</a></li>
+                </ul>
+                <br>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#sobre" onclick="toggleDropdown(event, 'submenu-sobre')">Para a Barba</a>
+                <ul class="submenu" id="submenu-sobre">
+                    <li><a href="#equipe">Óleos e Bálsamos</a></li>
+                    <li><a href="#historia">Shampoos e Condicionadores</a></li>
+                    <li><a href="#historia">Kits de barbear</a></li>
+                    <li><a href="#historia">Pentes e Escovas para barba</a></li>
+                    <li><a href="#historia">Ceras Modeladoras para bigode</a></li>
+                </ul>
+                <br>
+            </li>
+            <li class="dropdown">
+                <a href="#contato" onclick="toggleDropdown(event, 'submenu-contato')">Para a Pele</a>
+                <ul class="submenu" id="submenu-contato">
+                    <li><a href="#email">Hidratantes faciais e corporais para pele masculina</a></li>
+                    <li><a href="#telefone">Protetores Solares</a></li>
+                    <li><a href="#endereco">Máscaras fáciais e esfoliantes</a></li>
+                    <li><a href="#historia">Séruns antienvelhecimento e para revitalização da pele</a></li>
+                </ul>
+                <br>
+            </li>
+            
+            
+            <li class="dropdown">
+                <a href="#higiene" onclick="toggleDropdown(event, 'submenu-higiene')">Higiene e Bem-Estar</a>
+                <ul class="submenu" id="submenu-higiene">
+                    <li><a href="#desodorante">Desodorantes e antitranspirantes</a></li>
+                    <li><a href="#sabonete">Sabonetes artesanais ou específicos para pele masculina</a></li>
+                    <li><a href="#kit">Kits de higiene pessoal</a></li>
+                    <li><a href="#fragrancia">Fragrâncias Masculinas</a></li>
+                </ul>
+                <br>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#higiene" onclick="toggleDropdown(event, 'submenu-Aparelhos')">Aparelhos e Ferramentas</a>
+                <ul class="submenu" id="submenu-Aparelhos">
+                    <li><a href="#maquinas">Máquinas de barbear e operadores de cabelo e barba</a></li>
+                    <li><a href="#tesouras">Tesouras e Lâminas de precisão</a></li>
+                    <li><a href="#limpeza">Ferramentas de limpeza facial</a></li>
+                    <li><a href="#navalha">Navalhas e aparelhos de barbear</a></li>
+                </ul>
+                <br>
+            </li>
+            
+             <li class="dropdown">
+                <a href="#higiene" onclick="toggleDropdown(event, 'submenu-autocuidado')">Bem-Estar e autocuidado</a>
+                <ul class="submenu" id="submenu-autocuidado">
+                    <li><a href="#vitaminas">Vitaminas e suplementos para cabelo, pele e unhas</a></li>
+                    <li><a href="#aroma">Produtos de aromaterapia</a></li>
+                    <li><a href="#spa">Produtos para spa em casa</a></li>
+                    
+                </ul>
+                <br>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#higiene" onclick="toggleDropdown(event, 'submenu-acessorios')">Acessórios</a>
+                <ul class="submenu" id="submenu-acessorios">
+                    <li><a href="#relogio">Relógios</a></li>
+                    <li><a href="#pulseira">Pulseiras</a></li>
+                    <li><a href="#anel">Anéis</a></li>
+                     <li><a href="#gravata">Gravatas</a></li>
+                     <li><a href="#cinto">Cintos</a></li>
+                </ul>
+                <br>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#higiene" onclick="toggleDropdown(event, 'submenu-calçados')">Calçados</a>
+                <ul class="submenu" id="submenu-calçados">
+                    <li><a href="#sapato">Sapatos Sociais</a></li>
+                    <li><a href="#Tenis">Tênis</a></li>
+                    <li><a href="#sandalia">Sandálias</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+        </ul>
+    </nav>
+        <script>
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const menuHamburguer = document.querySelector('.menu-hamburguer');
+
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    menuHamburguer.classList.toggle('ativo');
+}
+
+function toggleDropdown(event, submenuId) {
+    event.preventDefault(); // Evita o redirecionamento padrão do link
+
+    // Fecha outros submenus
+    const submenus = document.querySelectorAll('.submenu');
+    submenus.forEach(submenu => {
+        if (submenu.id !== submenuId) {
+            submenu.style.display = 'none';
+        }
+    });
+
+    // Alterna o submenu atual
+    const submenu = document.getElementById(submenuId);
+    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+}
+
+        </script>
+        <div class="corpo">
+        <h1>Sugestões Para Você</h1>
+        </div>
+        
+         <footer>
+             <p><br><br><br>&copy; 2024 Visual Alpha. Todos os direitos reservados.<br><br>Contato: contato@meusite.com</p>
+    </footer>
+    </body>
+</html>
